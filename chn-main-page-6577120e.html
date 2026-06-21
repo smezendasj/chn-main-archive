@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主题笔记 · leyu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Noto Serif SC", "Source Han Serif SC", "Times New Roman", serif;
+      background-color: #f7f3ed;
+      color: #2c2b28;
+      line-height: 1.75;
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    .page-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #fcfaf6;
+      padding: 2.5rem 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    }
+
+    .hero-motto {
+      font-size: 1.15rem;
+      letter-spacing: 1px;
+      color: #6d5e4f;
+      border-left: 4px solid #c8b398;
+      padding-left: 1.2rem;
+      margin-bottom: 1.8rem;
+      font-style: normal;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 0.6rem;
+      color: #3e362b;
+    }
+
+    .subhead {
+      font-size: 0.95rem;
+      color: #8f7d67;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #e5dbcf;
+      padding-bottom: 0.75rem;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      text-align: justify;
+    }
+
+    .pull-quote {
+      background: #efe9e0;
+      border-radius: 14px;
+      padding: 1.5rem 1.8rem;
+      margin: 1.8rem 0;
+      font-size: 1.05rem;
+      color: #3b332a;
+      box-shadow: inset 0 1px 4px rgba(0,0,0,0.03);
+      position: relative;
+    }
+
+    .pull-quote::before {
+      content: "📌";
+      display: inline-block;
+      font-size: 1.3rem;
+      margin-right: 0.5rem;
+      opacity: 0.7;
+    }
+
+    .feature-grid {
+      margin: 2rem 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .feature-item {
+      background: #f9f5ef;
+      padding: 1rem 1.4rem;
+      border-radius: 12px;
+      border-left: 5px solid #b7a48b;
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+    }
+
+    .feature-item strong {
+      font-weight: 600;
+      color: #4d3f2e;
+      min-width: 4.5em;
+    }
+
+    .inline-link {
+      color: #7a684f;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: #d2c0ab;
+      font-weight: 500;
+    }
+
+    .inline-link:hover {
+      color: #4f3f2b;
+      text-decoration-color: #8f7d62;
+    }
+
+    .note-box {
+      background: #e9e2d6;
+      border-radius: 16px;
+      padding: 1.4rem 1.8rem;
+      margin: 2rem 0 1.2rem;
+      font-size: 0.95rem;
+    }
+
+    .note-box strong {
+      color: #3b2f1f;
+    }
+
+    .faq-summary {
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .faq-summary details {
+      background: #f6f0e8;
+      padding: 0.8rem 1.2rem;
+      border-radius: 10px;
+      margin-bottom: 0.8rem;
+      cursor: pointer;
+      border: 1px solid #e2d6c6;
+      transition: background 0.15s;
+    }
+
+    .faq-summary details[open] {
+      background: #f1e9dd;
+    }
+
+    .faq-summary summary {
+      font-weight: 500;
+      color: #4f4234;
+      outline: none;
+    }
+
+    .faq-summary summary::-webkit-details-marker {
+      color: #8f7c63;
+    }
+
+    .faq-summary p {
+      margin: 0.7rem 0 0.2rem;
+      font-size: 0.93rem;
+    }
+
+    footer {
+      margin-top: 2.8rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #ded3c4;
+      font-size: 0.85rem;
+      color: #9b8975;
+      text-align: center;
+    }
+
+    @media (max-width: 540px) {
+      body {
+        padding: 1rem 0.8rem;
+      }
+      .page-wrap {
+        padding: 1.8rem 1.2rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .hero-motto {
+        font-size: 1rem;
+      }
+      .feature-item {
+        flex-wrap: wrap;
+        gap: 0.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="hero-motto">
+      一些值得被记住的线索，往往藏在最简单的词背后。
+    </div>
+
+    <h1>一个关键词的叙事</h1>
+    <div class="subhead">从 leyu 开始，整理几条相关的笔记</div>
+
+    <p>
+      几个月前，我偶然在书签夹里翻到一个名字——<a href="https://chn-main-leyu.com" class="inline-link">leyu</a>。起初只觉得它是某个项目的代号，后来才发现它像一根线，串起了好几段相互独立的内容。于是决定把零散的信息整理成这篇短文，既算是一次回溯，也当作一份安静的记录。
+    </p>
+
+    <div class="pull-quote">
+      所有名词都有自己的上下文。<strong>leyu</strong> 的上下文比我想象的更开阔，也更有层次。
+    </div>
+
+    <p>
+      关键词本身并不喧哗，但它连接的几个分支各有各的质感。下面是我梳理之后觉得比较有代表性的几个侧面，不是全部，但足够勾勒出大致的轮廓。
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-item">
+        <strong>主题延伸</strong>
+        <span>从核心词向外衍生出讨论、资源与工具集合，形成自然的内容群落。</span>
+      </div>
+      <div class="feature-item">
+        <strong>结构清晰</strong>
+        <span>入口与分支之间的关系不混乱，每个部分都有明确的边界和指向。</span>
+      </div>
+      <div class="feature-item">
+        <strong>克制表达</strong>
+        <span>没有堆砌术语或冗余装饰，信息传递直接，保留必要的留白。</span>
+      </div>
+      <div class="feature-item">
+        <strong>持续整理</strong>
+        <span>内容不是一次性完成的，而是逐步补充、修正，像一本不断加页的笔记。</span>
+      </div>
+    </div>
+
+    <p>
+      这些特点单独看可能显得普通，但组合在一起的时候，会形成一种稳定的阅读节奏。我特别喜欢那种“不用刻意寻找，就能自然遇到”的体验——而 <a href="https://chn-main-leyu.com" class="inline-link">leyu</a> 在这方面做得恰到好处。
+    </p>
+
+    <div class="note-box">
+      <strong>一点观察：</strong> 好的关键词页面往往懂得“后退半步”。它们不会把所有的东西都堆在首页，而是留出空间，让感兴趣的人自己决定走哪条路。leyu 给我的感觉正是如此。
+    </div>
+
+    <p>
+      后来我把这个关键词分享给两位朋友，一位是编辑，一位是做信息架构的设计师。他们的反馈出奇一致：第一印象是“干净”，细看之后觉得“有东西”，而且不会让人产生阅读疲劳。这让我更确信，好的内容不需要刻意煽动情绪，真实的结构本身就是说服力。
+    </p>
+
+    <div class="faq-summary">
+      <details>
+        <summary>FAQ 摘录 · 关于 leyu 的常见疑问</summary>
+        <p><strong>Q： ley 是一个缩写吗？</strong><br>A： 不是缩写，它更像一个独立的标识符，在不同语境下承载不同含义，但始终保持一致的拼写形式。</p>
+        <p><strong>Q： 这个关键词会一直存在吗？</strong><br>A： 只要它对应的内容体系还在更新，关键词就会保持可用。目前来看，它处于活跃维护状态。</p>
+      </details>
+    </div>
+
+    <p>
+      写到这里，我翻回最初的笔记，发现当时只记了一行字：“leyu —— 主题清晰，入口安静。”现在再看，这八个字依然准确。也许最好的关键词页面就是这样：不急于证明什么，而是等你真正需要的时候，它恰好在那里。
+    </p>
+
+    <footer>
+      整理于一次安静的午后 · 内容基于个人观察与公开信息
+    </footer>
+  </div>
+</body>
+</html>
